@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import FormTodo from "../components/todo/form";
-import ListTodo from "../components/todo/list";
-import ItemTodo from "../components/todo/item";
+import FormTodo from "./components/todo/form";
+import ListTodo from "./components/todo/list";
+import ItemTodo from "./components/todo/item";
 import "./styles.css";
 
 class App extends Component {
