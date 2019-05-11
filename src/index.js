@@ -14,9 +14,11 @@ class App extends Component {
   }
 
   submitTodo(val) {
-    const { todos } = this.state;
-    const newItem = todos.concat([val]);
-    this.setState({ todos: newItem });
+    if (val) {
+      const { todos } = this.state;
+      const newItem = todos.concat([val]);
+      this.setState({ todos: newItem });
+    }
   }
 
   deleteTodo(val) {
